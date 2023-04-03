@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans 
+				http://www.springframework.org/schema/beans/spring-beans.xsd" 
+			    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			    xmlns="http://www.springframework.org/schema/beans">
+		
+		<!-- #1 -->	    
+		<bean id="t1" class='kr.co.softsoldesk.beans3.TestBean1.java' lazy-init="true"
+		init-method="bean1_init"/>	    
+		<!-- #2 -->	    
+		<bean id="t2" class='kr.co.softsoldesk.beans3.TestBean2.java' lazy-init="true"
+		init-method="bean2_init"/>	    
+		
+		<bean class='kr.co.softsoldesk.processor.TestBeanPostProcessor' />
+			    
+</beans>	    
