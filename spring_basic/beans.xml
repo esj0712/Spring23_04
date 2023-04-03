@@ -4,6 +4,6 @@
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	   xmlns="http://www.springframework.org/schema/beans">
 	   
-	   <bean id="t1" class='kr.co.softsoldesk.beans.TestBean'/>
+	   <bean id="t2" class='kr.co.softsoldesk.beans.TestBean'/>
 	   
 </beans>	   

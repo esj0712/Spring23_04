@@ -3,7 +3,8 @@
 				http://www.springframework.org/schema/beans/spring-beans.xsd" 
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	   xmlns="http://www.springframework.org/schema/beans">
-	   
-	   <bean id="t1" class='kr.co.softsoldesk.beans.TestBean'/>
+	 <!-- getBean메소드에 의해서 생성자가 호출된 후 bean1_init()실행. close()메소드 호출 후 bean1_destroy()실행 -->
+	<bean id='t1' class='kr.co.softsoldesk.beans2.TestBean1' lazy-init="true"
+	init-method="bean1_init" destroy-method="bean1_destroy"/>
 	   
 </beans>	   
